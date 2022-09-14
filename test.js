@@ -176,8 +176,11 @@ function persona(nombre,edad,direccion){
 
 var persona1 = new persona("juan",23,"spada grosi");
 
+// para recorrer las propiedades de un objeto
+//no podemos recorrerlas como un array debemos utilizzar el ciclo
+//for in  y para acceder a el valor de la ropiedad escribimos el objeto y entre corchetes pa prop que itera en este caso
 function imprimirobjeto(persona){
     for(prop in persona){
-        console.log(prop+" "+ persona[prop]);
+        console.log(prop+": "+ persona[prop]);
     }
 }
